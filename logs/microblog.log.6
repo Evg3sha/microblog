@@ -1,0 +1,145 @@
+2018-01-30 20:40:20,125 ERROR: Exception on /favicon.ico [GET] [in /home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "/home/evgesha/microblog/app/errors.py", line 7, in not_found_error
+    return render_template(render_template('404.html')), 404
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/lib64/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/lib64/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/lib64/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/lib64/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: <!doctype html>
+<html>
+    <head>
+        
+        <title>Добро пожаловать в Microblog</title>
+        
+    </head>
+    <body>
+        <div>
+            Microblog:
+            <a href="/index">Home</a>
+            
+            <a href="/user/%D0%96%D0%B5%D0%BD%D1%8F">Profile</a>
+            <a href="/logout">Logout</a>
+            
+        </div>
+        <hr>
+        
+        
+        
+        
+	<h1>Бедааа....((( Страница не найдена(((</h1>
+	<p><a href="/index">Воротиться в зад</a></p>
+
+    </body>
+</html>
+2018-01-30 20:40:21,256 ERROR: Exception on /user/Женя [GET] [in /home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: followers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/evgesha/microblog/app/routes.py", line 74, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/evgesha/.local/lib64/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/usr/lib64/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/lib64/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/lib64/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib64/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/evgesha/microblog/app/../templates/user.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/evgesha/microblog/app/../templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/evgesha/microblog/app/../templates/user.html", line 11, in block "content"
+    <p>{{ user.followers.count() }} followers, {{ user.followed.count() }} following.</p>
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/dynamic.py", line 264, in count
+    return self._clone(sess).count()
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3089, in count
+    return self.from_self(col).scalar()
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 2843, in scalar
+    ret = self.one()
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 2814, in one
+    ret = self.one_or_none()
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 2784, in one_or_none
+    ret = list(self)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 2855, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 2878, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/usr/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: followers [SQL: 'SELECT count(*) AS count_1 \nFROM (SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen \nFROM user, followers \nWHERE followers.followed_id = ? AND followers.follower_id = user.id) AS anon_1'] [parameters: (3,)]

@@ -1,0 +1,144 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-04-24 23:30+0000\n"
+"PO-Revision-Date: 2018-04-24 23:31+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.0\n"
+
+#: app/__init__.py:20
+msgid "Пожалуйста, войдите, чтобы получить доступ к этой странице."
+msgstr ""
+
+#: app/email.py:22
+msgid "[Microblog] Сбросил ваш пароль"
+msgstr ""
+
+#: app/forms.py:9 app/forms.py:16 app/forms.py:34
+msgid "Логин"
+msgstr ""
+
+#: app/forms.py:10 app/forms.py:18 app/forms.py:60
+msgid "Пароль"
+msgstr ""
+
+#: app/forms.py:11
+msgid "Запомнить меня"
+msgstr ""
+
+#: app/forms.py:12 app/routes.py:36
+msgid "Войти"
+msgstr ""
+
+#: app/forms.py:17 app/forms.py:55
+msgid "Email"
+msgstr ""
+
+#: app/forms.py:19 app/forms.py:61
+msgid "Повторите пароль"
+msgstr ""
+
+#: app/forms.py:20
+msgid "Зарегистрироваться"
+msgstr ""
+
+#: app/forms.py:25 app/forms.py:46
+msgid "Пожалуйста, используйте другое имя пользователя."
+msgstr ""
+
+#: app/forms.py:30
+msgid "Пожалуйста, используйте другой email-адрес."
+msgstr ""
+
+#: app/forms.py:35
+msgid "Обо мне"
+msgstr ""
+
+#: app/forms.py:36 app/forms.py:51
+msgid "Отправить"
+msgstr ""
+
+#: app/forms.py:50
+msgid "Скажи что-нибудь"
+msgstr ""
+
+#: app/forms.py:56 app/routes.py:167
+msgid "Сброс пароля"
+msgstr ""
+
+#: app/forms.py:62
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/routes.py:29
+msgid "Неправильное имя пользователя или пароль"
+msgstr ""
+
+#: app/routes.py:48
+msgid "Ваш пост в прямом эфире"
+msgstr ""
+
+#: app/routes.py:54
+msgid "Home"
+msgstr ""
+
+#: app/routes.py:74
+msgid "Поздравляем, вы теперь зарегистрированный пользователь"
+msgstr ""
+
+#: app/routes.py:76
+msgid "Register"
+msgstr ""
+
+#: app/routes.py:105
+msgid "Ваши изменения были сохранены."
+msgstr ""
+
+#: app/routes.py:110
+msgid "Редактировать профиль"
+msgstr ""
+
+#: app/routes.py:119 app/routes.py:135
+msgid "Пользователь {} не найден."
+msgstr ""
+
+#: app/routes.py:122
+msgid "Вы не можете подписаться на себя!"
+msgstr ""
+
+#: app/routes.py:126
+msgid "Вы подписанны на {}!"
+msgstr ""
+
+#: app/routes.py:138
+msgid "Вы не можете отписаться от себя"
+msgstr ""
+
+#: app/routes.py:142
+msgid "Вы не подписанны на {}."
+msgstr ""
+
+#: app/routes.py:153
+msgid "Explore"
+msgstr ""
+
+#: app/routes.py:165
+msgid "Проверьте свой адрес электронной почты, чтобы узнать, как сбросить пароль."
+msgstr ""
+
+#: app/routes.py:181
+msgid "Ваш пароль был сброшен."
+msgstr ""
+
