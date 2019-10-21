@@ -179,7 +179,7 @@ wcwidth==0.1.7
 webcolors==1.5
 webencodings==0.5.1
 websocket-client==0.37.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 Whoosh==2.7.4
 wstools==0.4.5
 WTForms==2.1
