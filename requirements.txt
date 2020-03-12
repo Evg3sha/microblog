@@ -104,7 +104,7 @@ ply==3.10
 portage==2.3.25
 post==1.0.1
 prompt-toolkit==1.0.15
-psutil==5.4.1
+psutil==5.6.6
 ptyprocess==0.5.2
 public==1.0.1
 pwquality==1.4.0
