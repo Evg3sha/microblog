@@ -140,7 +140,7 @@ python-subunit==1.2.0
 pytz==2017.2
 pyxattr==0.6.0
 pyxdg==0.25
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==16.0.2
 qtconsole==4.3.1
 query-string==1.0.1
