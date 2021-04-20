@@ -1,6 +1,6 @@
 alabaster==0.7.10
 alembic==0.9.7
-ansible==2.4.2.0
+ansible==2.9.20
 apipkg==1.4
 asn1crypto==0.22.0
 attrs==17.3.0
