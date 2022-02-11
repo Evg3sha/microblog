@@ -167,7 +167,7 @@ texttable==0.9.1
 tornado==4.5.1
 traceback2==1.4.0
 traitlets==4.3.2
-Twisted==17.9.0
+Twisted==22.1.0
 typing==3.6.2
 unittest2==1.1.0
 urllib3==1.22
