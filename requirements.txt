@@ -75,7 +75,7 @@ linecache2==1.0.0
 LiveWires==2.1
 lxml==4.1.1
 m2r==0.1.12
-Mako==1.0.7
+Mako==1.2.2
 Markdown==2.6.11
 MarkupSafe==0.23
 meson==0.44.0
